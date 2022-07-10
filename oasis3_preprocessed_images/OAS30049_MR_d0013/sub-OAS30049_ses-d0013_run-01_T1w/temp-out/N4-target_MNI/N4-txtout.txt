@@ -1,0 +1,324 @@
+
+Running N4 for 3-dimensional images.
+
+Mask not read.  Creating Otsu mask.
+Current level = 1
+  Iteration 1 (of 50).   Current convergence value = 0.00062072 (threshold = 0)
+  Iteration 2 (of 50).   Current convergence value = 0.000614525 (threshold = 0)
+  Iteration 3 (of 50).   Current convergence value = 0.000607425 (threshold = 0)
+  Iteration 4 (of 50).   Current convergence value = 0.000600532 (threshold = 0)
+  Iteration 5 (of 50).   Current convergence value = 0.000594097 (threshold = 0)
+  Iteration 6 (of 50).   Current convergence value = 0.000587335 (threshold = 0)
+  Iteration 7 (of 50).   Current convergence value = 0.000580616 (threshold = 0)
+  Iteration 8 (of 50).   Current convergence value = 0.000573857 (threshold = 0)
+  Iteration 9 (of 50).   Current convergence value = 0.000567457 (threshold = 0)
+  Iteration 10 (of 50).   Current convergence value = 0.000561667 (threshold = 0)
+  Iteration 11 (of 50).   Current convergence value = 0.000555724 (threshold = 0)
+  Iteration 12 (of 50).   Current convergence value = 0.000549605 (threshold = 0)
+  Iteration 13 (of 50).   Current convergence value = 0.000543332 (threshold = 0)
+  Iteration 14 (of 50).   Current convergence value = 0.000537621 (threshold = 0)
+  Iteration 15 (of 50).   Current convergence value = 0.000531241 (threshold = 0)
+  Iteration 16 (of 50).   Current convergence value = 0.000526338 (threshold = 0)
+  Iteration 17 (of 50).   Current convergence value = 0.000520839 (threshold = 0)
+  Iteration 18 (of 50).   Current convergence value = 0.000514529 (threshold = 0)
+  Iteration 19 (of 50).   Current convergence value = 0.000509157 (threshold = 0)
+  Iteration 20 (of 50).   Current convergence value = 0.000504827 (threshold = 0)
+  Iteration 21 (of 50).   Current convergence value = 0.000499646 (threshold = 0)
+  Iteration 22 (of 50).   Current convergence value = 0.000493495 (threshold = 0)
+  Iteration 23 (of 50).   Current convergence value = 0.000489566 (threshold = 0)
+  Iteration 24 (of 50).   Current convergence value = 0.000484158 (threshold = 0)
+  Iteration 25 (of 50).   Current convergence value = 0.000479124 (threshold = 0)
+  Iteration 26 (of 50).   Current convergence value = 0.000474129 (threshold = 0)
+  Iteration 27 (of 50).   Current convergence value = 0.000469239 (threshold = 0)
+  Iteration 28 (of 50).   Current convergence value = 0.000464179 (threshold = 0)
+  Iteration 29 (of 50).   Current convergence value = 0.000459498 (threshold = 0)
+  Iteration 30 (of 50).   Current convergence value = 0.000454637 (threshold = 0)
+  Iteration 31 (of 50).   Current convergence value = 0.000450255 (threshold = 0)
+  Iteration 32 (of 50).   Current convergence value = 0.000445665 (threshold = 0)
+  Iteration 33 (of 50).   Current convergence value = 0.000441065 (threshold = 0)
+  Iteration 34 (of 50).   Current convergence value = 0.000436313 (threshold = 0)
+  Iteration 35 (of 50).   Current convergence value = 0.000431532 (threshold = 0)
+  Iteration 36 (of 50).   Current convergence value = 0.000427407 (threshold = 0)
+  Iteration 37 (of 50).   Current convergence value = 0.000423296 (threshold = 0)
+  Iteration 38 (of 50).   Current convergence value = 0.000418882 (threshold = 0)
+  Iteration 39 (of 50).   Current convergence value = 0.000414284 (threshold = 0)
+  Iteration 40 (of 50).   Current convergence value = 0.000410187 (threshold = 0)
+  Iteration 41 (of 50).   Current convergence value = 0.000406059 (threshold = 0)
+  Iteration 42 (of 50).   Current convergence value = 0.000401811 (threshold = 0)
+  Iteration 43 (of 50).   Current convergence value = 0.000396546 (threshold = 0)
+  Iteration 44 (of 50).   Current convergence value = 0.00039369 (threshold = 0)
+  Iteration 45 (of 50).   Current convergence value = 0.000389658 (threshold = 0)
+  Iteration 46 (of 50).   Current convergence value = 0.000385337 (threshold = 0)
+  Iteration 47 (of 50).   Current convergence value = 0.000380277 (threshold = 0)
+  Iteration 48 (of 50).   Current convergence value = 0.000377202 (threshold = 0)
+  Iteration 49 (of 50).   Current convergence value = 0.000373311 (threshold = 0)
+  Iteration 50 (of 50).   Current convergence value = 0.000369433 (threshold = 0)
+Current level = 2
+  Iteration 1 (of 50).   Current convergence value = 0.00107055 (threshold = 0)
+  Iteration 2 (of 50).   Current convergence value = 0.00104675 (threshold = 0)
+  Iteration 3 (of 50).   Current convergence value = 0.00101953 (threshold = 0)
+  Iteration 4 (of 50).   Current convergence value = 0.000993317 (threshold = 0)
+  Iteration 5 (of 50).   Current convergence value = 0.000966778 (threshold = 0)
+  Iteration 6 (of 50).   Current convergence value = 0.00094227 (threshold = 0)
+  Iteration 7 (of 50).   Current convergence value = 0.00091794 (threshold = 0)
+  Iteration 8 (of 50).   Current convergence value = 0.000895022 (threshold = 0)
+  Iteration 9 (of 50).   Current convergence value = 0.000872522 (threshold = 0)
+  Iteration 10 (of 50).   Current convergence value = 0.00084989 (threshold = 0)
+  Iteration 11 (of 50).   Current convergence value = 0.000830448 (threshold = 0)
+  Iteration 12 (of 50).   Current convergence value = 0.000809583 (threshold = 0)
+  Iteration 13 (of 50).   Current convergence value = 0.000788958 (threshold = 0)
+  Iteration 14 (of 50).   Current convergence value = 0.000770295 (threshold = 0)
+  Iteration 15 (of 50).   Current convergence value = 0.000752005 (threshold = 0)
+  Iteration 16 (of 50).   Current convergence value = 0.000734409 (threshold = 0)
+  Iteration 17 (of 50).   Current convergence value = 0.000717027 (threshold = 0)
+  Iteration 18 (of 50).   Current convergence value = 0.000699525 (threshold = 0)
+  Iteration 19 (of 50).   Current convergence value = 0.000683333 (threshold = 0)
+  Iteration 20 (of 50).   Current convergence value = 0.000667764 (threshold = 0)
+  Iteration 21 (of 50).   Current convergence value = 0.000651677 (threshold = 0)
+  Iteration 22 (of 50).   Current convergence value = 0.000636556 (threshold = 0)
+  Iteration 23 (of 50).   Current convergence value = 0.000622001 (threshold = 0)
+  Iteration 24 (of 50).   Current convergence value = 0.00060686 (threshold = 0)
+  Iteration 25 (of 50).   Current convergence value = 0.00059314 (threshold = 0)
+  Iteration 26 (of 50).   Current convergence value = 0.000578949 (threshold = 0)
+  Iteration 27 (of 50).   Current convergence value = 0.000562755 (threshold = 0)
+  Iteration 28 (of 50).   Current convergence value = 0.000551614 (threshold = 0)
+  Iteration 29 (of 50).   Current convergence value = 0.000536929 (threshold = 0)
+  Iteration 30 (of 50).   Current convergence value = 0.000526096 (threshold = 0)
+  Iteration 31 (of 50).   Current convergence value = 0.000514542 (threshold = 0)
+  Iteration 32 (of 50).   Current convergence value = 0.000503773 (threshold = 0)
+  Iteration 33 (of 50).   Current convergence value = 0.000491291 (threshold = 0)
+  Iteration 34 (of 50).   Current convergence value = 0.000481469 (threshold = 0)
+  Iteration 35 (of 50).   Current convergence value = 0.00047211 (threshold = 0)
+  Iteration 36 (of 50).   Current convergence value = 0.000462304 (threshold = 0)
+  Iteration 37 (of 50).   Current convergence value = 0.000453433 (threshold = 0)
+  Iteration 38 (of 50).   Current convergence value = 0.000443964 (threshold = 0)
+  Iteration 39 (of 50).   Current convergence value = 0.000436065 (threshold = 0)
+  Iteration 40 (of 50).   Current convergence value = 0.000427924 (threshold = 0)
+  Iteration 41 (of 50).   Current convergence value = 0.000419704 (threshold = 0)
+  Iteration 42 (of 50).   Current convergence value = 0.000412138 (threshold = 0)
+  Iteration 43 (of 50).   Current convergence value = 0.000404595 (threshold = 0)
+  Iteration 44 (of 50).   Current convergence value = 0.000397697 (threshold = 0)
+  Iteration 45 (of 50).   Current convergence value = 0.000390693 (threshold = 0)
+  Iteration 46 (of 50).   Current convergence value = 0.000384034 (threshold = 0)
+  Iteration 47 (of 50).   Current convergence value = 0.000377526 (threshold = 0)
+  Iteration 48 (of 50).   Current convergence value = 0.000371364 (threshold = 0)
+  Iteration 49 (of 50).   Current convergence value = 0.000365296 (threshold = 0)
+  Iteration 50 (of 50).   Current convergence value = 0.000359482 (threshold = 0)
+Current level = 3
+  Iteration 1 (of 50).   Current convergence value = 0.00131128 (threshold = 0)
+  Iteration 2 (of 50).   Current convergence value = 0.00126692 (threshold = 0)
+  Iteration 3 (of 50).   Current convergence value = 0.00122498 (threshold = 0)
+  Iteration 4 (of 50).   Current convergence value = 0.00118439 (threshold = 0)
+  Iteration 5 (of 50).   Current convergence value = 0.00114588 (threshold = 0)
+  Iteration 6 (of 50).   Current convergence value = 0.00110899 (threshold = 0)
+  Iteration 7 (of 50).   Current convergence value = 0.00107378 (threshold = 0)
+  Iteration 8 (of 50).   Current convergence value = 0.00103977 (threshold = 0)
+  Iteration 9 (of 50).   Current convergence value = 0.0010075 (threshold = 0)
+  Iteration 10 (of 50).   Current convergence value = 0.000976628 (threshold = 0)
+  Iteration 11 (of 50).   Current convergence value = 0.000947142 (threshold = 0)
+  Iteration 12 (of 50).   Current convergence value = 0.000919294 (threshold = 0)
+  Iteration 13 (of 50).   Current convergence value = 0.000892009 (threshold = 0)
+  Iteration 14 (of 50).   Current convergence value = 0.000866148 (threshold = 0)
+  Iteration 15 (of 50).   Current convergence value = 0.000841379 (threshold = 0)
+  Iteration 16 (of 50).   Current convergence value = 0.000818309 (threshold = 0)
+  Iteration 17 (of 50).   Current convergence value = 0.000796511 (threshold = 0)
+  Iteration 18 (of 50).   Current convergence value = 0.000776012 (threshold = 0)
+  Iteration 19 (of 50).   Current convergence value = 0.000757134 (threshold = 0)
+  Iteration 20 (of 50).   Current convergence value = 0.000739457 (threshold = 0)
+  Iteration 21 (of 50).   Current convergence value = 0.000723235 (threshold = 0)
+  Iteration 22 (of 50).   Current convergence value = 0.000707854 (threshold = 0)
+  Iteration 23 (of 50).   Current convergence value = 0.000694325 (threshold = 0)
+  Iteration 24 (of 50).   Current convergence value = 0.000680865 (threshold = 0)
+  Iteration 25 (of 50).   Current convergence value = 0.000668242 (threshold = 0)
+  Iteration 26 (of 50).   Current convergence value = 0.00065705 (threshold = 0)
+  Iteration 27 (of 50).   Current convergence value = 0.000646647 (threshold = 0)
+  Iteration 28 (of 50).   Current convergence value = 0.00063656 (threshold = 0)
+  Iteration 29 (of 50).   Current convergence value = 0.00062738 (threshold = 0)
+  Iteration 30 (of 50).   Current convergence value = 0.000618486 (threshold = 0)
+  Iteration 31 (of 50).   Current convergence value = 0.000610603 (threshold = 0)
+  Iteration 32 (of 50).   Current convergence value = 0.00060293 (threshold = 0)
+  Iteration 33 (of 50).   Current convergence value = 0.000595166 (threshold = 0)
+  Iteration 34 (of 50).   Current convergence value = 0.000588119 (threshold = 0)
+  Iteration 35 (of 50).   Current convergence value = 0.000581367 (threshold = 0)
+  Iteration 36 (of 50).   Current convergence value = 0.00057443 (threshold = 0)
+  Iteration 37 (of 50).   Current convergence value = 0.000568275 (threshold = 0)
+  Iteration 38 (of 50).   Current convergence value = 0.000562127 (threshold = 0)
+  Iteration 39 (of 50).   Current convergence value = 0.000556199 (threshold = 0)
+  Iteration 40 (of 50).   Current convergence value = 0.000550129 (threshold = 0)
+  Iteration 41 (of 50).   Current convergence value = 0.000544533 (threshold = 0)
+  Iteration 42 (of 50).   Current convergence value = 0.000538608 (threshold = 0)
+  Iteration 43 (of 50).   Current convergence value = 0.000533055 (threshold = 0)
+  Iteration 44 (of 50).   Current convergence value = 0.000527254 (threshold = 0)
+  Iteration 45 (of 50).   Current convergence value = 0.00052186 (threshold = 0)
+  Iteration 46 (of 50).   Current convergence value = 0.000516595 (threshold = 0)
+  Iteration 47 (of 50).   Current convergence value = 0.000511396 (threshold = 0)
+  Iteration 48 (of 50).   Current convergence value = 0.000505817 (threshold = 0)
+  Iteration 49 (of 50).   Current convergence value = 0.000500996 (threshold = 0)
+  Iteration 50 (of 50).   Current convergence value = 0.000495191 (threshold = 0)
+Current level = 4
+  Iteration 1 (of 50).   Current convergence value = 0.00270621 (threshold = 0)
+  Iteration 2 (of 50).   Current convergence value = 0.00263286 (threshold = 0)
+  Iteration 3 (of 50).   Current convergence value = 0.00255962 (threshold = 0)
+  Iteration 4 (of 50).   Current convergence value = 0.00248499 (threshold = 0)
+  Iteration 5 (of 50).   Current convergence value = 0.0024092 (threshold = 0)
+  Iteration 6 (of 50).   Current convergence value = 0.0023318 (threshold = 0)
+  Iteration 7 (of 50).   Current convergence value = 0.0022511 (threshold = 0)
+  Iteration 8 (of 50).   Current convergence value = 0.00216993 (threshold = 0)
+  Iteration 9 (of 50).   Current convergence value = 0.00208727 (threshold = 0)
+  Iteration 10 (of 50).   Current convergence value = 0.00200349 (threshold = 0)
+  Iteration 11 (of 50).   Current convergence value = 0.00192157 (threshold = 0)
+  Iteration 12 (of 50).   Current convergence value = 0.00184177 (threshold = 0)
+  Iteration 13 (of 50).   Current convergence value = 0.00176556 (threshold = 0)
+  Iteration 14 (of 50).   Current convergence value = 0.00169141 (threshold = 0)
+  Iteration 15 (of 50).   Current convergence value = 0.00161789 (threshold = 0)
+  Iteration 16 (of 50).   Current convergence value = 0.00154866 (threshold = 0)
+  Iteration 17 (of 50).   Current convergence value = 0.0014821 (threshold = 0)
+  Iteration 18 (of 50).   Current convergence value = 0.00141973 (threshold = 0)
+  Iteration 19 (of 50).   Current convergence value = 0.00136259 (threshold = 0)
+  Iteration 20 (of 50).   Current convergence value = 0.00130975 (threshold = 0)
+  Iteration 21 (of 50).   Current convergence value = 0.00126125 (threshold = 0)
+  Iteration 22 (of 50).   Current convergence value = 0.00121689 (threshold = 0)
+  Iteration 23 (of 50).   Current convergence value = 0.00117599 (threshold = 0)
+  Iteration 24 (of 50).   Current convergence value = 0.00113783 (threshold = 0)
+  Iteration 25 (of 50).   Current convergence value = 0.00110241 (threshold = 0)
+  Iteration 26 (of 50).   Current convergence value = 0.00106979 (threshold = 0)
+  Iteration 27 (of 50).   Current convergence value = 0.00103932 (threshold = 0)
+  Iteration 28 (of 50).   Current convergence value = 0.001011 (threshold = 0)
+  Iteration 29 (of 50).   Current convergence value = 0.000984679 (threshold = 0)
+  Iteration 30 (of 50).   Current convergence value = 0.000960008 (threshold = 0)
+  Iteration 31 (of 50).   Current convergence value = 0.000936558 (threshold = 0)
+  Iteration 32 (of 50).   Current convergence value = 0.00091321 (threshold = 0)
+  Iteration 33 (of 50).   Current convergence value = 0.000892031 (threshold = 0)
+  Iteration 34 (of 50).   Current convergence value = 0.000872863 (threshold = 0)
+  Iteration 35 (of 50).   Current convergence value = 0.000853192 (threshold = 0)
+  Iteration 36 (of 50).   Current convergence value = 0.000834521 (threshold = 0)
+  Iteration 37 (of 50).   Current convergence value = 0.000816533 (threshold = 0)
+  Iteration 38 (of 50).   Current convergence value = 0.000799166 (threshold = 0)
+  Iteration 39 (of 50).   Current convergence value = 0.000782712 (threshold = 0)
+  Iteration 40 (of 50).   Current convergence value = 0.000767002 (threshold = 0)
+  Iteration 41 (of 50).   Current convergence value = 0.000752222 (threshold = 0)
+  Iteration 42 (of 50).   Current convergence value = 0.00073783 (threshold = 0)
+  Iteration 43 (of 50).   Current convergence value = 0.000723154 (threshold = 0)
+  Iteration 44 (of 50).   Current convergence value = 0.000710568 (threshold = 0)
+  Iteration 45 (of 50).   Current convergence value = 0.000697985 (threshold = 0)
+  Iteration 46 (of 50).   Current convergence value = 0.00068537 (threshold = 0)
+  Iteration 47 (of 50).   Current convergence value = 0.000674239 (threshold = 0)
+  Iteration 48 (of 50).   Current convergence value = 0.000663104 (threshold = 0)
+  Iteration 49 (of 50).   Current convergence value = 0.000652313 (threshold = 0)
+  Iteration 50 (of 50).   Current convergence value = 0.000642203 (threshold = 0)
+   N4BiasFieldCorrectionImageFilter (0x1e4ebb0)
+     RTTI typeinfo:   itk::N4BiasFieldCorrectionImageFilter<itk::Image<float, 3u>, itk::Image<float, 3u>, itk::Image<float, 3u> >
+     Reference Count: 1
+     Modified Time: 514
+     Debug: Off
+     Object Name: 
+     Observers: 
+       IterationEvent(Command)
+     Inputs: 
+       Primary: (0x1e62ce0) *
+       _1: (0x1e69de0)
+     Indexed Inputs: 
+       0: Primary (0x1e62ce0)
+       1: _1 (0x1e69de0)
+     Required Input Names: Primary
+     NumberOfRequiredInputs: 1
+     Outputs: 
+       Primary: (0x1e4d380)
+     Indexed Outputs: 
+       0: Primary (0x1e4d380)
+     NumberOfRequiredOutputs: 1
+     Number Of Threads: 8
+     ReleaseDataFlag: Off
+     ReleaseDataBeforeUpdateFlag: Off
+     AbortGenerateData: Off
+     Progress: 0
+     Multithreader: 
+       RTTI typeinfo:   itk::MultiThreader
+       Reference Count: 1
+       Modified Time: 105
+       Debug: Off
+       Object Name: 
+       Observers: 
+         none
+       Thread Count: 8
+       Global Maximum Number Of Threads: 128
+       Global Default Number Of Threads: 8
+     CoordinateTolerance: 1e-06
+     DirectionTolerance: 1e-06
+     Mask label: 1
+     Number of histogram bins: 200
+     Wiener filter noise: 0.01
+     Bias field FWHM: 0.15
+     Maximum number of iterations: [50, 50, 50, 50]
+     Convergence threshold: 0
+     Spline order: 3
+     Number of fitting levels: [4, 4, 4]
+     Number of control points: [4, 4, 4]
+     CurrentConvergenceMeasurement: 0.000642203
+     CurrentLevel: 4
+     ElapsedIterations: 51
+     LogBiasFieldControlPointLattice: Image (0x39d98a0)
+  RTTI typeinfo:   itk::Image<itk::Vector<float, 1u>, 3u>
+  Reference Count: 2
+  Modified Time: 77908427
+  Debug: Off
+  Object Name: 
+  Observers: 
+    none
+  Source: (none)
+  Source output name: (none)
+  Release Data: Off
+  Data Released: False
+  Global Release Data: Off
+  PipelineMTime: 0
+  UpdateMTime: 0
+  RealTimeStamp: 0 seconds 
+  LargestPossibleRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [11, 11, 11]
+  BufferedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [11, 11, 11]
+  RequestedRegion: 
+    Dimension: 3
+    Index: [0, 0, 0]
+    Size: [11, 11, 11]
+  Spacing: [21, 27, 19]
+  Origin: [21, 27, -19]
+  Direction: 
+-1 0 0
+0 -1 0
+0 0 1
+
+  IndexToPointMatrix: 
+-21 0 0
+0 -27 0
+0 0 19
+
+  PointToIndexMatrix: 
+-0.047619 0 0
+0 -0.037037 0
+0 0 0.0526316
+
+  Inverse Direction: 
+-1 0 0
+0 -1 0
+0 0 1
+
+  PixelContainer: 
+    ImportImageContainer (0x1e60d30)
+      RTTI typeinfo:   itk::ImportImageContainer<unsigned long, itk::Vector<float, 1u> >
+      Reference Count: 1
+      Modified Time: 77908428
+      Debug: Off
+      Object Name: 
+      Observers: 
+        none
+      Pointer: 0x1e74a40
+      Container manages memory: true
+      Size: 1331
+      Capacity: 1331
+
+Elapsed time: 15.6828

@@ -1,0 +1,104 @@
+[NiftyReg Warning] You have one image mask option turned on but not the other.
+[NiftyReg Warning] This will affect the degree of symmetry achieved.
+
+[NiftyReg ALADIN] Command line:
+	 /extra/full-multi-atlas/niftyreg/bin//reg_aladin -ref /extra/full-multi-atlas/MNI/average305_t1_tal_lin.nii.gz -flo /INPUTS/sub-OAS30049_ses-d0013_run-01_T1w.nii.gz -aff /OUTPUTS/sub-OAS30049_ses-d0013_run-01_T1w/MNI-registration/target_MNI_aff.mtx -res /OUTPUTS/sub-OAS30049_ses-d0013_run-01_T1w/MNI-registration/target_MNI.nii.gz -rmask /extra/full-multi-atlas/MNI/average305_t1_tal_lin_mask.nii.gz
+
+[reg_aladin_sym] Parameters
+[reg_aladin_sym] Reference image name: /extra/full-multi-atlas/MNI/average305_t1_tal_lin.nii.gz
+[reg_aladin_sym] 	172x220x156 voxels
+[reg_aladin_sym] 	1x1x1 mm
+[reg_aladin_sym] floating image name: /INPUTS/sub-OAS30049_ses-d0013_run-01_T1w.nii.gz
+[reg_aladin_sym] 	176x256x256 voxels
+[reg_aladin_sym] 	0.999998x1x1 mm
+[reg_aladin_sym] Maximum iteration number: 5 (10 during the first level)
+[reg_aladin_sym] Percentage of blocks: 50 % (100% during the first level)
+[reg_aladin_sym] Current level 1 / 3
+[reg_aladin_sym] reference image size: 	43x55x39 voxels	4x4x4 mm
+[reg_aladin_sym] floating image size: 	44x64x64 voxels	3.99999x4x4 mm
+[reg_aladin_sym] Block size = [4 4 4]
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [11 14 10]
+[reg_aladin_sym] Backward Block number = [11 16 16]
+[reg_aladin_sym] Initial forward transformation matrix::
+1	0	0	8.48723
+0	1	0	52.4457
+0	0	1	-10.6356
+0	0	0	1
+[reg_aladin_sym] Initial backward transformation matrix::
+1	0	0	-8.48723
+0	1	0	-52.4457
+0	0	1	10.6356
+0	0	0	1
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.931505	0.00921099	-0.0419574	3.09927
+-0.0414786	0.983432	-0.232344	46.5158
+0.064954	0.19998	0.938855	-3.54015
+0	0	0	0.999985
+[reg_aladin_sym] Final backward transformation matrix::
+1.06965	-0.0187937	0.0431519	-2.28822
+0.0263079	0.96767	0.240648	-44.2416
+-0.0796072	-0.204815	1.01086	13.3526
+0	0	0	0.999992
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 2 / 3
+[reg_aladin_sym] reference image size: 	86x110x78 voxels	2x2x2 mm
+[reg_aladin_sym] floating image size: 	88x128x128 voxels	2x2x2 mm
+[reg_aladin_sym] Block size = [4 4 4]
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [22 28 20]
+[reg_aladin_sym] Backward Block number = [22 32 32]
+[reg_aladin_sym] Initial forward transformation matrix::
+0.931505	0.00921099	-0.0419574	3.09927
+-0.0414786	0.983432	-0.232344	46.5158
+0.064954	0.19998	0.938855	-3.54015
+0	0	0	0.999985
+[reg_aladin_sym] Initial backward transformation matrix::
+1.06965	-0.0187937	0.0431519	-2.28822
+0.0263079	0.96767	0.240648	-44.2416
+-0.0796072	-0.204815	1.01086	13.3526
+0	0	0	0.999992
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.931647	0.00730885	-0.0483597	3.17245
+-0.0169577	0.962794	-0.196309	46.2511
+0.0644036	0.193459	0.91994	-3.68237
+0	0	0	0.999977
+[reg_aladin_sym] Final backward transformation matrix::
+1.06942	-0.0186162	0.0522452	-2.3393
+0.00342366	0.995882	0.212694	-45.2888
+-0.0755886	-0.208127	1.03865	13.6907
+0	0	0	1
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+[reg_aladin_sym] Current level 3 / 3
+[reg_aladin_sym] reference image size: 	172x220x156 voxels	1x1x1 mm
+[reg_aladin_sym] floating image size: 	176x256x256 voxels	0.999998x1x1 mm
+[reg_aladin_sym] Block size = [4 4 4]
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Forward Block number = [43 55 39]
+[reg_aladin_sym] Backward Block number = [44 64 64]
+[reg_aladin_sym] Initial forward transformation matrix::
+0.931647	0.00730885	-0.0483597	3.17245
+-0.0169577	0.962794	-0.196309	46.2511
+0.0644036	0.193459	0.91994	-3.68237
+0	0	0	0.999977
+[reg_aladin_sym] Initial backward transformation matrix::
+1.06942	-0.0186162	0.0522452	-2.3393
+0.00342366	0.995882	0.212694	-45.2888
+-0.0755886	-0.208127	1.03865	13.6907
+0	0	0	1
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+[reg_aladin_sym] Final forward transformation matrix::
+0.930296	0.0112464	-0.0571135	3.06692
+-0.0261199	0.965938	-0.2015	45.6137
+0.0525708	0.185828	0.928054	-3.44446
+0	0	0	0.999985
+[reg_aladin_sym] Final backward transformation matrix::
+1.07084	-0.0241375	0.0606589	-1.97423
+0.015649	0.993419	0.216652	-44.6152
+-0.0637916	-0.197546	1.0307	12.7567
+0	0	0	1
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Registration Performed in 1 min 52 sec
+Have a good day !
