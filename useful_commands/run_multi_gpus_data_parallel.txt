@@ -1,0 +1,33 @@
+Run slant on multiple gpus on the same node (DataParallel):
+
+
+1.Upgrade from miniconda to miniconda3 to be able to use python3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+chmod +x Miniconda3-latest-Linux-x86_64.sh
+./Miniconda3-latest-Linux-x86_64.sh
+
+Choose /pythondir/miniconda3 as installation path
+
+2.Install torch and any other missing library
+$PWD/pythondir/miniconda3/bin/pip install torch===1.4.0+cu92 torchvision===0.5.0+cu92 -f https://download.pytorch.org/whl/torch_stable.html
+
+pip install pytz
+pip install scipy
+pip install nibabel
+
+3.Replace miniconda string with miniconda3 string in test_all_pieces.sh
+vim command: :%s/miniconda/miniconda3/g
+
+4. Make the needed changes in /extra/python/test.py and /extra/python/torchsrc/trainer.py
+
+/extra/python/torchsrc/imgloaders/imgloader_CT_3D_allpiece.py - for python3 compatibility 
+
+line 24: replace if subdict.has_key('seg_subs'): with if 'seg_subs' in subdict:
+
+trainer.py
+line 293:
+modify the content of the if statement:
+	self.model = torch.nn.DataParallel(self.model)
+	self.model.load_state_dict(torch.load(model_pth), strict=False)
+
+dp-wn03.grid.pub.ro
