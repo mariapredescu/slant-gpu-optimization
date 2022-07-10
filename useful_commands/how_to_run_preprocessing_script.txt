@@ -1,0 +1,16 @@
+Run pre-prosessing
+
+1. Set matlab env variables: 
+export LD_LIBRARY_PATH=/usr/local/MATLAB/MATLAB_Runtime/v901/runtime/glnxa64:/usr/local/MATLAB/MATLAB_Runtime/v901/bin/glnxa64:/usr/local/MATLAB/MATLAB_Runtime/v901/sys/os/glnxa64:/usr/local/MATLAB/MATLAB_Runtime/v901/sys/opengl/lib/glnxa64
+
+2. Go to the root of the system:
+cd /
+
+3. There should be three folders:
+	extra
+	OUTPUTS
+	INPUTS
+	pythondir
+
+4. Run the preprocessing script:
+	/extra/run_Deep_brain_preprocessing

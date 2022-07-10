@@ -1,0 +1,108 @@
+fep commands pp
+
+qlogin -q sprmcro-gpu.q
+
+command to display the used ports: netstat -tunlep | grep LISTEN | awk '{print $4}'
+
+command to display the ip address: hostname -I
+172.24.12.13 192.168.122.1 172.17.0.1
+
+module load libraries/cuda
+module available
+[emil.slusanschi@sprmcrogpu-wn13 ~]$ nvpr
+nvprof   nvprune  
+[emil.slusanschi@sprmcrogpu-wn13 ~]$ nsight
+nsight                       nsight_ee_plugins_manage.sh  nsight-sys
+
+nvidia-smi topo -m -command to see the topology gpu
+nvidia-smi topo -m  -p2p n
+
+commands for limiting the CPUs:
+
+taskset -c 0,1,2 OUTPUTS/run_all_batches.sh
+
+setting the number of threads in the program (test.py):
+torch.set_num_threads(16)
+
+RUN MPS (run multiple processes on the same GPU, at the same time):
+1. qlogin -q hp-sl.q
+2. load the necessary libraries: 
+	module load compilers/gnu-5.4.0 libraries/openmpi-2.0.1-gcc-5.4.0 // for mpi
+    module load libraries/cuda  // for cuda
+    NOTE for supermicro queue module load libraries/cuda-10.2
+3. ssh maria.predescu@hpsl-wn03 (this is the machine where I have exclusive mode set)
+Set GPU EXCLUSIVE MODE (you have to be sudo on the machine):
+  -- sudo nvidia-smi –c 3 –i 0,1 
+  ---- -c 3 sets exclusive mode
+  ---- -c 0 sets default mode
+4. nvidia-cuda-mps-control –d // start the mps daemon in background
+5. run the mpi script
+
+How to run multiple SLANT for multiple images at the same time:
+1. Run the preprocessing script for the desired image -> in the OUTPUTS folder will be created more folders, one with the name of the image
+2. Copy the folders created after preprocessing on the cluster in the OUTPUTS folder, one for every image to be processed
+3. Go to /OUTPUTS/run_all_batches.sh and add a new line for the image to be prcessed:
+	bash ~/slant_training/OUTPUTS/test_volume_2/working_dir/test_all_pieces.sh
+	bash ~/slant_training/OUTPUTS/test_volume/working_dir/test_all_pieces.sh
+
+How to run SLANT using nvprof profiler:
+	module load libraries/cuda-10.2
+	nvprof --print-gpu-trace --profile-child-processes OUTPUTS/run_all_batches.sh --benchmark -numdevices=1 -i=0
+
+	https://docs.nvidia.com/cuda/profiler-users-guide/index.html#mps-profiling
+	https://developer.nvidia.com/blog/cuda-pro-tip-nvprof-your-handy-universal-gpu-profiler/
+	
+	To gather the data in a file for each process and visualize it in GUI:
+		nvprof --print-gpu-trace --profile-child-processes -o slant-two-images-gpu0-mps-%p.nvprof OUTPUTS/run_all_batches.sh --benchmark -numdevices=1 -i=0
+
+	Run the GUI for multiple processes:
+		nvvp
+		File -> Import -> Nvprof -> Multiple processes -> Browse -> nvprof file from the local system -> OK
+
+NOTE FOR MPS: two images can be run fine simulaneously on the same GPU, for three images the load is to high.
+
+Run SLANT:
+1. Modify the path in: $PWD/OUTPUTS/test_volume/working_dir/test_all_pieces.sh -> type :%s/<my_user_name>/<your_user_name>/g and press ENTER in vim
+2. Modify the path in: $PWD/OUTPUTS/test_volume_2/working_dir/test_all_pieces.sh -> type :%s/<my_user_name>/<your_user_name>/g and press ENTER in vim
+3. Install torch: $PWD/pythondir/miniconda/bin/pip install torch===1.4.0+cu92 torchvision===0.5.0+cu92 -f https://download.pytorch.org/whl/torch_stable.html
+4. Set one GPU to exclusive mode: 
+	module load libraries/cuda-10.2
+	sudo nvidia-smi –c 3 –i 0
+		-c 3 sets exclusive mode
+    	-c 0 sets default mode
+5. Start the mps daemon:
+	nvidia-cuda-mps-control –d // start the mps daemon in background
+6. Run SLANT:
+	$PWD/OUTPUTS/run_all_batches.sh
+
+MRI image used from OASIS3:
+ - PROJECT: OASIS3  >  SUBJECT: OAS30049  >  OAS30049_MR_d0013 > anat2 T1w
+ - PROJECT: OASIS3  >  SUBJECT: OAS30010  >  OAS30010_MR_d0068 > anat4 T1w
+ 															   > anat1 angio
+ - PROJECT: OASIS3  >  SUBJECT: OAS30046  >  OAS30046_MR_d0072 > anat4 T2star
+ - PROJECT: OASIS3  >  SUBJECT: OAS30059  >  OAS30059_MR_d0230 > anat2 T2w
+
+
+Command for extracting information from the GPU:
+	nvidia-smi -i 0 --query-gpu=timestamp,utilization.gpu,utilization.memory,memory.used --format=csv,nounits -lms 200 -f nvidia-d0068-angio-2.csv
+
+New way of connecting to the servers after fep upgrade:
+
+srun -p ml --pty -w ucsc480-wn151 /bin/bash
+
+srun --account ml_test -p ml --pty -w ucsc480-wn151 /bin/bash
+
+srun --account ml_test -p sprmcrogpu --pty /bin/bash
+
+How to run SLANT on the A100 server (sprmcrogpu-wn[140-141])
+
+1. Connect to the server: srun -p ml --pty /bin/bash
+srun --account ml_test -p sprmcrogpu --pty /bin/bash
+2. Install pyhtorch for python3 (only the first time): pythondir/miniconda3/bin/pip3 install torch==1.8.1+cu111 torchvision==0.9.1+cu111 torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
+3. Replace miniconda string with miniconda3 string in slant_training/OUTPUTS/${IMAGE_DIR}/working_dir/test_all_pieces.sh:
+vim command: :%s/miniconda/miniconda3/g
+4. OUTPUTS/run_all_batches.sh
+
+Run the script for schedules processing of the fragments for more images:
+
+./run_piece_script_scheduled_2.sh -i 0 -t 5 -n 2 -- sub-OAS30010_ses-d0068_T1w sub-OAS30049_ses-d0013_run-01_T1w
